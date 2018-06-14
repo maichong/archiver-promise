@@ -4,6 +4,8 @@
  * @author Liang <liang@maichong.it>
  */
 
+'use strict';
+
 var archiver = require('archiver');
 
 module.exports = function (file, options) {
