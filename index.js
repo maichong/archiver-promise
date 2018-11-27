@@ -6,20 +6,17 @@
 
 'use strict';
 
-var fs = require('fs');
 var archiver = require('archiver');
 
 module.exports = function (file, options) {
-  var ext = file.match(/\w+$/)[0] || file;
-  var output = fs.createWriteStream(file);
-  var archive = archiver(ext, options);
+  var archive = archiver(file, options);
   var done;
   var error;
   var promise;
   var onSuccess;
   var onError;
 
-  output.on('close', function () {
+  archive.on('finish', function () {
     done = true;
     if (onSuccess) {
       onSuccess();
@@ -34,9 +31,6 @@ module.exports = function (file, options) {
     }
     throw err;
   });
-
-  // pipe archive data to the file
-  archive.pipe(output);
 
   let finalize = archive.finalize;
   archive.finalize = function () {
