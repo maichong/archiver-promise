@@ -10,7 +10,9 @@
     "async"
   ],
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maichong/archiver-promise.git"
@@ -27,5 +29,8 @@
   "homepage": "https://github.com/maichong/archiver-promise#readme",
   "dependencies": {
     "archiver": "^2.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }

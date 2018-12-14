@@ -7,14 +7,19 @@
 'use strict';
 
 var archiver = require('archiver');
+var path = require('path');
+var fs = require('fs');
 
 module.exports = function (file, options) {
-  var archive = archiver(file, options);
+  var ext = path.extname(file).substring(1); // strip the leading .
+  var archive = archiver(ext, options);
   var done;
   var error;
   var promise;
   var onSuccess;
   var onError;
+
+  archive.pipe(fs.createWriteStream(file));
 
   archive.on('finish', function () {
     done = true;
