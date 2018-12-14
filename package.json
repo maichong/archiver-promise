@@ -11,7 +11,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "node ./tests/index.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,8 @@
   "homepage": "https://github.com/maichong/archiver-promise#readme",
   "dependencies": {
     "archiver": "^2.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }
