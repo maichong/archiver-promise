@@ -10,7 +10,9 @@
     "async"
   ],
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "node ./tests/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maichong/archiver-promise.git"
