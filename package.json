@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/maichong/archiver-promise#readme",
   "dependencies": {
-    "archiver": "^2.1.1"
+    "archiver": "^5.0.0"
   }
 }
