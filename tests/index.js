@@ -4,7 +4,7 @@
  * @author Liang <liang@maichong.it>
  */
 
-var archiver = require('../index');
+var archiver = require('../dist/index.js');
 const fs = require('fs')
 
 const output = fs.createWriteStream('test.zip')
