@@ -13,18 +13,18 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maichong/archiver-promise.git"
+    "url": "git+https://github.com/edy4c7/archiver-promise.git"
   },
   "author": {
-    "name": "Liang",
-    "email": "liang@maichong.it",
-    "url": "https://github.com/liangxingchen"
+    "name": "edy4c7",
+    "email": "edy4c7@gmail.com",
+    "url": "https://github.com/edy4c7"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maichong/archiver-promise/issues"
+    "url": "https://github.com/edy4c7/archiver-promise/issues"
   },
-  "homepage": "https://github.com/maichong/archiver-promise#readme",
+  "homepage": "https://github.com/edy4c7/archiver-promise#readme",
   "dependencies": {
     "archiver": "^2.1.1"
   }
