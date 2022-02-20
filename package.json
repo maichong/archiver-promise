@@ -1,6 +1,6 @@
 {
-  "name": "archiver-promise",
-  "version": "1.0.0",
+  "name": "@edy4c7/archiver-promise",
+  "version": "1.1.0",
   "description": "Promise wrapper for archiver",
   "keywords": [
     "archiver",
@@ -12,7 +12,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -p .",
-    "test": "node tests/index.js"
+    "test": "node tests/index.js",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
