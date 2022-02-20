@@ -5,10 +5,14 @@
  */
 
 var archiver = require('../index');
+const fs = require('fs')
 
-var archive = archiver('test.zip', {
+const output = fs.createWriteStream('test.zip')
+var archive = archiver('zip', {
   store: true
 });
+
+archive.pipe(output)
 
 // append a file
 archive.file('index.js', { name: 'index.js' });

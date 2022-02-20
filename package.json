@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/edy4c7/archiver-promise#readme",
   "dependencies": {
-    "archiver": "^2.1.1"
+    "archiver": "^5.3.0"
   }
 }
